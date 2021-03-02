@@ -1,3 +1,6 @@
+## manage test
+리액트 시험용 페이지.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
