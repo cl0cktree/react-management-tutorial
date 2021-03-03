@@ -1,4 +1,4 @@
-import Customer from './components/Customer';
+import Customer from './components/Customer.js';
 import './App.css';
 
 const customers = [

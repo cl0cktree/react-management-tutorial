@@ -3,8 +3,8 @@ import React from 'react';
 function Customer(){
     return (
         <div>
-            <CustomerProfile id={this.props.id} image={this.props.image} name={this.props.name}/>
-            <CustomerInfo birthday={this.props.birthday} gender={this.props.gender} job={this.props.job}/>
+            <CustomerProfile id={this.props.id} image={this.props.image} name={this.props.name} />
+            <CustomerInfo birthday={this.props.birthday} gender={this.props.gender} job={this.props.job} />
         </div>
     )
 };
@@ -12,7 +12,7 @@ function Customer(){
 function CustomerProfile(){
     return (
         <div>
-            <img src={this.props.image} alt="profile"/>
+            <img src={this.props.image} alt="profile" />
             <h2>{this.props.name}({this.props.id})</h2>
         </div>
     )
