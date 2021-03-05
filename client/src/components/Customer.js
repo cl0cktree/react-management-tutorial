@@ -18,30 +18,58 @@ const styles = theme => ({
     color: '#fff',
   }
 });
-function Customer(props){
-    const {classes} = props;
-    return (
-        <TableRow>
-            <TableCell className={classes.td}>
-                {props.id}
-            </TableCell>
-            <TableCell className={classes.td}>
-                <img src={props.image} alt="profile" />
-            </TableCell>
-            <TableCell className={classes.td}>
-                {props.name}
-            </TableCell>
-            <TableCell className={classes.td}>
-                {props.birthday}
-            </TableCell>
-            <TableCell className={classes.td}>
-                {props.gender}
-            </TableCell>
-            <TableCell className={classes.td}>
-                {props.job}
-            </TableCell>
-        </TableRow>
-    )
+// function Customer(props){
+//     const {classes} = props;
+//     return (
+//         <TableRow>
+//             <TableCell className={classes.td}>
+//                 {props.id}
+//             </TableCell>
+//             <TableCell className={classes.td}>
+//                 <img src={props.image} alt="profile" />
+//             </TableCell>
+//             <TableCell className={classes.td}>
+//                 {props.name}
+//             </TableCell>
+//             <TableCell className={classes.td}>
+//                 {props.birthday}
+//             </TableCell>
+//             <TableCell className={classes.td}>
+//                 {props.gender}
+//             </TableCell>
+//             <TableCell className={classes.td}>
+//                 {props.job}
+//             </TableCell>
+//         </TableRow>
+//     )
+// };
+
+class Customer extends React.Component{
+    render(){
+        const {classes} = this.props;
+        return (
+            <TableRow>
+                <TableCell className={classes.td}>
+                    {this.props.id}
+                </TableCell>
+                <TableCell className={classes.td}>
+                    <img src={this.props.image} alt="profile" />
+                </TableCell>
+                <TableCell className={classes.td}>
+                    {this.props.name}
+                </TableCell>
+                <TableCell className={classes.td}>
+                    {this.props.birthday}
+                </TableCell>
+                <TableCell className={classes.td}>
+                    {this.props.gender}
+                </TableCell>
+                <TableCell className={classes.td}>
+                    {this.props.job}
+                </TableCell>
+            </TableRow>
+        )
+    }
 };
 
 export default withStyles(styles)(Customer);
